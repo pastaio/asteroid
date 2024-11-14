@@ -4,7 +4,7 @@ from asteroid import Asteroid
 from constants import *
 
 
-class AsteroidField(pygame.sprite.Sprite):
+class AsteroidField(pygame.sprite.Sprite): 
     edges = [
         [
             pygame.Vector2(1, 0),
@@ -49,5 +49,3 @@ class AsteroidField(pygame.sprite.Sprite):
             position = edge[1](random.uniform(0, 1))
             kind = random.randint(1, ASTEROID_KINDS)
             self.spawn(ASTEROID_MIN_RADIUS * kind, position, velocity)
-
-            
